@@ -21,10 +21,10 @@
     <h2>Formularios</h2>
     <form action="MEDIA.HTML" method="GET"> <!-- el get es para serializarlo en la URL y POST es para serializarlo adentro del formulario oculto para seguridad-->
         <label for="txtNombre">Nombre:</label>
-        <input id="txtNombre" type="text" placeholder="Nombre completo" />
+        <input id="txtNombre" type="text" placeholder="Nombre completo" required />
         <br/>
         <Label for="txtEmail"> Email:</Label>
-        <input id="txtEmail" type="email" placeholder="Correo aqui"/>
+        <input id="txtEmail" type="email" placeholder="Correo aqui" required/>
         <br>
       
 
@@ -38,7 +38,7 @@
             <label for="opcOS">Defined by OS</label>
             <br>
             <label for="txtPasswrod">Password:</label>
-            <input id="txtPasswrod" type="password" title="8 letras,1 numero" placeholder="password here">
+            <input id="txtPasswrod" type="password" title="8 letras,1 numero" placeholder="password here"pattern="^(?=.[A-Z])(?=.[a-z])(?=.\d)(?=.[!@#$%^&])[A-Za-z\d!@#$%^&]{8,}$">
         </div>
         <fieldset>
             <legend>Opciones</legend>
@@ -52,6 +52,23 @@
             <input type="checkbox" value="1" name="ShareWithACL"/>
         </fieldset>
         <br>
+        <label for="cmbciudad">Ciudad:</label>
+            <Select id=cmbciudad name="ciudad">
+                <option value="1">Tegucigalpa</option>
+                <option value="3">Danli</option>
+                <option value="4">San pedro Sula</option>
+                <option value="5"selected>Choluteca</option>
+                <option value="6">Juticalpa</option>
+                <option value="7">Santa Rosa de Copan</option>
+                <option value="8">siguiatepeque</option>
+                <option value="8">La ceiba</option>
+            </Select>
+        <br>
+        <label for="txtblog">Entrada de Blog</label>
+        <br>
+        <textarea id="txtBlog" name="Blog" placeholder="Escribir un blog" cols="80" rows="10"></textarea>
+        <br>
+       
         
         <button name="BtnEnviar" type="submit">Enviar</button>
         <button name="BtnEnviar" type="reset">Limpiar</button>
