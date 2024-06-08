@@ -1,0 +1,10 @@
+/* CSS cascade Style sheet*/
+header{
+    background-color: black;
+    color: aliceblue;
+}
+
+header{
+    background-color: blue;
+
+}
