@@ -68,6 +68,7 @@ h2 {
 .precios {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .card {
@@ -116,14 +117,61 @@ h2 {
 }
 
 .hero {
+    position: relative;
     background-color: gray;
     height: 85vh;
     padding: 1rem;
-    margin: 1rem;
+    overflow: hidden;
+
 }
 
 .hero img {
     display: block;
     width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
 
+.hero .hero-content{
+    position: absolute;
+    width: 300px;
+    top: calc(50% - 150px);
+    left: calc(50% - 150px);
+    color: #ccc;
+}
+
+.hero .hero-content h2{
+    display: inline-block;
+    font-size: 2.5rem;
+    text-decoration: none;
+    margin:  0;
+   
+    /*trouble TRBL - top right buttom left*/
+    /*padding: 1rem 2rem ;*/
+    /*padding-inline-start: 1rem;*/
+    margin-bottom: 1.5rem;
+}
+
+.hero .hero-content p {
+    line-height: 2;
+
+
+}
+
+.hero .hero-content button {
+    font-size: 1.1rem;
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background-color:  cornflowerblue;
+    color: #000;
+    border: 1px solid #333;
+    border-radius: 17px;
+}
+
+footer{
+    background-color: #000;
+    color: white;
 }
