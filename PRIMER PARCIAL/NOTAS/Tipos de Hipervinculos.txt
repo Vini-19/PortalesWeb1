@@ -1,9 +1,0 @@
-Tipos de Hipervinculos
-
-anclas: navegan entre el mismo documento.
-relativas: permite navegar entre documentos.
-absolutas: son dominios que tiene protocolo recurso.
-
-Puertes que deben de estar habilitados para la trama o DNS
-80 
-443
