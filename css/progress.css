@@ -1,0 +1,56 @@
+.animation{
+    position: relative;
+    min-height: 480px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.animation .progress-circle{
+    position: absolute;
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    background-color: #000;
+    background-image: conic-gradient(red,green,yellow);
+    animation: goright 5s infinite;
+}
+
+@keyframes goright{
+    0%{
+        top: 80%;
+        right: 100%;
+        background-image: conic-gradient(blue,black,yellow);
+        transform: rotate(0deg);
+    }
+    20%{
+        top: 80;
+        right: 70%;
+        background-image: conic-gradient(red,blue,yellow);
+        transform: rotate(0deg);
+    }
+    22%{
+        top: 50%;
+        right: 70%;
+        background-image: conic-gradient(red,yellow,yellow);
+        transform: rotate(0deg);
+    }
+    25%{
+        top: 80%;
+        right: 70%;
+        background-image: conic-gradient(brown,red,blue);
+        transform: rotate(0deg);
+    }
+    50%{
+        top: 25%;
+        right: 80%;
+        background-image: conic-gradient(blue,red,yellow);
+        transform: rotate(0deg);
+    }
+    100%{
+        top: 100%;
+        right: 10%;
+        background-image: conic-gradient(blue,black,yellow);
+        transform: rotate(0deg);
+    }
+}
